@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moisés Oliveira">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <title>Crie sua Conta</title>
+</head>
+<body>
+
+    <h1 class="title">Crie sua Conta</h1>
+
+    <div class="container_components">
+        <form id="FormRegister"> 
+
+            <img id="profileImagePreview" class="Profile-Image" alt="Foto do perfil">
+
+            <br>
+            
+            <label for="ProfileImage" class="custom-file-upload">
+                Selecionar Imagem
+            </label>
+            <input class="selectImage" type="file" id="ProfileImage" accept="image/*">
+
+            <div class="input-container">
+
+                <p class="info">Preencha os campos abaixo</p>
+
+                <input id="NomeUser" type="text" placeholder="Nome e Sobrenome" name="Nome do usuario" required>
+                <input id="EmailUser" type="email" placeholder="Email" name="Email" required>
+                <input id="TelUser" type="tel" placeholder="Num Celular" name="Telefone" required>
+                <input id="SenhaUser" type="password" placeholder="Senha" name="Senha" required>
+                <button class="button" id="RegisterButton" type="button">Criar Conta</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    
+    <script src="register.js"></script>
+</body>
+</html>

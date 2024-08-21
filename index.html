@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Luthieria, Oliveira, Luthieria Oliveira">
+    <meta name="author" content="Moisés Oliveira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <title>Luthieria Oliveira</title>
+</head>
+<body>
+    <img class="logo" src="assets/logo.png" alt="Luthieria Oliveira">
+    <div class="container">
+        <form id="FormLogin">
+            <h1>Entrar na Plataforma</h1>
+            <div class="input-container">
+                <input placeholder="E-mail" type="email" id="Email" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/user--v1.png" alt="Ícone de usuário" />
+            </div>
+            <div class="input-container">
+                <input placeholder="Senha" type="password" id="Senha" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/lock-2.png" alt="Ícone de cadeado" />
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            <button type="submit" class="button-entrar" id="button-entrar">Entrar</button>
+            <div class="register">
+                <p>Não está cadastrado? <a href="register.html">Cadastrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>

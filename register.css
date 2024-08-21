@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("assets/instruments.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container_components{
+    width: 420px;
+    height: 450px;
+    border: 2px solid antiquewhite;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.info{
+    margin-top: 5px;
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 2px 0;
+}
+
+.input-container input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    margin-top: 5px;
+}
+
+.input-container input::placeholder{
+    color: white;
+}
+
+.input-container input:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    color: white;
+}
+
+.button{
+    width: 100%;
+    height: 45px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(156, 79, 228);
+}
+
+.Profile-Image{
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+input[type="file"].selectImage {
+    display: none;
+}
+
+.custom-file-upload {
+    position: relative;
+    height: 20px;
+    display: inline-block;
+    padding: 1px 1%;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.custom-file-upload:hover{
+    background-color: rgb(156, 79, 228);
+}
